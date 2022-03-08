@@ -991,18 +991,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samuel.l.fitzsimmons\\.nuget\\packages\\": {},
+    "C:\\Users\\crazy\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samuel.l.fitzsimmons\\source\\repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
       "projectName": "FinanceMobileApp.iOS",
-      "projectPath": "C:\\Users\\samuel.l.fitzsimmons\\source\\repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\samuel.l.fitzsimmons\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samuel.l.fitzsimmons\\source\\repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\crazy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1010,7 +1010,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\samuel.l.fitzsimmons\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\crazy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -1025,8 +1025,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\samuel.l.fitzsimmons\\source\\repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
-              "projectPath": "C:\\Users\\samuel.l.fitzsimmons\\source\\repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
+            "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
+              "projectPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
             }
           }
         }
