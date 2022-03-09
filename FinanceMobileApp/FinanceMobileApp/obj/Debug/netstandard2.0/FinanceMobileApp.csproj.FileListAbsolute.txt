@@ -1,0 +1,15 @@
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.csproj.AssemblyReference.cache
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.AssemblyInfoInputs.cache
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.AssemblyInfo.cs
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.csproj.CoreCompileInputs.cache
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\bin\Debug\netstandard2.0\FinanceMobileApp.deps.json
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\bin\Debug\netstandard2.0\FinanceMobileApp.dll
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\bin\Debug\netstandard2.0\ref\FinanceMobileApp.dll
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\bin\Debug\netstandard2.0\FinanceMobileApp.pdb
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.dll
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\ref\FinanceMobileApp.dll
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.pdb

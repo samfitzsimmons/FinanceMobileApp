@@ -10,6 +10,7 @@ namespace FinanceMobileApp.Models
         public string Name { get; set; }
         public DateTime Date { get; set; }
         public string FileName { get; set; }
+        public string Description { get; set; }
 
         public enum ExpenseCategory
         {
@@ -31,10 +32,15 @@ namespace FinanceMobileApp.Models
             Work,
             Other
         }
-        public Expense()
+        public Expense(DateTime date , string name , ExpenseCategory category, double amount, string description)
         {
+            Date = date;
+            Name = name;
+            Spending = amount;
+            Description = description;
+
 
         }
     }
 }
-}
+
