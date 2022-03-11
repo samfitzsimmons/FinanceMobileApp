@@ -18,16 +18,16 @@ namespace FinanceMobileApp
       
 
         private DateTime SelectedDate; //The selected date by the user
-        public string Selected_Category;// The selected Category from the list  
-        
+        public string Selected_Category;// The selected Category from the list 
         public string ExpenseName;
         public double ExpenseAmount;
         public string ExpenseDescription;
-        public string SelectedItem;
+        
 
 
-        private ObservableCollection<Expense> Expenses;
+        private ObservableCollection<Expense> Expenses;// Observable collection that has all expenses loaded
         public List<Category> Categories;
+        public string SelectedItem;
 
 
         public ExpenseAddPage()
