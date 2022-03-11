@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceMobileApp.ExpenseAddPage">
+    <ContentPage.Content xmlns:local="clr-namespace:FinanceMobileApp.Models">
+        <StackLayout>
+            <Label Text="Enter your expense details:" />
+            <DatePicker x:Name="ExpenseDate"
+                    Format="D"
+                    DateSelected="ExpenseDate_DateSelected"  />
+            <Entry x:Name="Expense_Name"  Placeholder="Expense Name"
+                   />
+            <Entry x:Name="Expense_Amount"  Placeholder="Expense Amount"
+                   />
+            <Picker x:Name="Expense_Category" Title="Choose Expense Category" 
+                    SelectedIndexChanged="Expense_Category_SelectedIndexChanged"
+                    ItemsSource="{Binding Categories}"
+                    ItemDisplayBinding="{Binding CategoryName}"
+                    >
+            </Picker>
+            <Label Text="Expense Description"/>
+            <Editor x:Name="Description" 
+                    HeightRequest="100" />
+                <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Save" Text="Save Expense" 
+                        Clicked="Save_Clicked"
+                        BorderRadius="20"/>
+                        
+                <Button x:Name="Cancel " Text="Cancel"
+                        Clicked="Cancel_Button_Clicked"
+                        BorderRadius="20"
+                        Grid.Column="1"
+                        />
+            </Grid>
+         
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
