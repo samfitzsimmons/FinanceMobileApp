@@ -2142,18 +2142,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\crazy\\.nuget\\packages\\": {},
+    "C:\\Users\\burro\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
+      "projectUniqueName": "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
       "projectName": "FinanceMobileApp.Android",
-      "projectPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
-      "packagesPath": "C:\\Users\\crazy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\obj\\",
+      "projectPath": "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
+      "packagesPath": "C:\\Users\\burro\\.nuget\\packages\\",
+      "outputPath": "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2161,7 +2161,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\crazy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\burro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -2176,8 +2176,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
-              "projectPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
+            "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
+              "projectPath": "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
             }
           }
         }
