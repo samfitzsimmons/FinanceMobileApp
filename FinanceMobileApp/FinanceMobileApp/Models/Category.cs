@@ -7,12 +7,15 @@ namespace FinanceMobileApp.Models
 {
     public class Category
     {
-        public string CategoryName { get; set; }
+          
+       
+
+        public ExpenseCategory CategoryName { get; set; }
         public string ImageUrl { get; set; }
 
     }
 
-	public static class CategoryData
+	/*public static class CategoryData
 	{
 		public static IList<Category> Categories { get; private set; }
 
@@ -61,6 +64,7 @@ namespace FinanceMobileApp.Models
                 ImageUrl = ""
             });
           */
+    /*
             Categories.Add(new Category
             {
                 CategoryName = "Travel",
@@ -121,4 +125,5 @@ namespace FinanceMobileApp.Models
             });
         }
 	}
+*/
 }

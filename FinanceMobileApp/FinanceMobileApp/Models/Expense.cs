@@ -25,7 +25,7 @@ namespace FinanceMobileApp.Models
         }
     }
 
-  /*  public enum ExpenseCategory
+   public enum ExpenseCategory
     {
         Food_and_Drink,
         Shopping,
@@ -44,6 +44,6 @@ namespace FinanceMobileApp.Models
         Beauty,
         Work,
         Other
-    }*/
+    }
 }
 

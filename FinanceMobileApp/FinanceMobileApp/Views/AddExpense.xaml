@@ -10,13 +10,11 @@
                     DateSelected="OnDateSelected" />
             <Entry x:Name="Expense_Name"  Placeholder="Expense Name"
                    />
-          
-            <Picker x:Name="Expense_Category" Title="Choose Expense Category" 
-                    SelectedIndexChanged="Expense_Category_SelectedIndexChanged"
-                    ItemsSource="{Binding Categories}"
-                    ItemDisplayBinding="{Binding CategoryName}">
-            </Picker>
-            <Image Source="{Binding Categories.ImageUrl}" />
+            <Button x:Name="Category" Text="Select a Category " HeightRequest="40" WidthRequest="40" BorderRadius="20" 
+              Clicked="Category_Clicked"
+                   
+                    />
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -14,3 +14,4 @@ C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\o
 C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\ref\FinanceMobileApp.dll
 C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\FinanceMobileApp.pdb
 C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\Views\AddExpense.xaml.g.cs
+C:\Users\crazy\Source\Repos\FinanceMobileApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\Views\AddCategory.xaml.g.cs
