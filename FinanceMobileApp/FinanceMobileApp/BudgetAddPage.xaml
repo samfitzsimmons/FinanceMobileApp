@@ -3,76 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FinanceMobileApp.BudgetAddPage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Home"/>
+        <ToolbarItem Text="Budgets"/>
+    </ContentPage.ToolbarItems>
+
     <RelativeLayout>
-
-        <Grid Margin="0"
-              RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-              RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}">
-            
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
-            </Grid.RowDefinitions>
-
-            <Button x:Name="Budgets"
-                    Grid.Column="0"
-                    Margin="0"
-                    Text="Budgets"
-                    TextColor="DarkBlue"
-                    FontSize="14"
-                    FontAttributes="Bold"
-                    HeightRequest="50"
-                    BackgroundColor="OrangeRed"
-                    BorderRadius="10"
-                    Clicked="Budgets_Clicked"/>
-
-            <Button x:Name="Expenses"
-                    Grid.Column="1"
-                    Margin="0"
-                    Text="Expenses"
-                    TextColor="DarkBlue"
-                    FontSize="14"
-                    FontAttributes="Bold"
-                    HeightRequest="50"
-                    BackgroundColor="OrangeRed"
-                    BorderRadius="10"
-                    Clicked="Expenses_Clicked"/>
-            
-            <Button x:Name="History"
-                    Grid.Column="2"
-                    Margin="0"
-                    Text="History"
-                    TextColor="DarkBlue"
-                    FontSize="14"
-                    FontAttributes="Bold"
-                    HeightRequest="50"
-                    BackgroundColor="OrangeRed"
-                    BorderRadius="10"
-                    Clicked="History_Clicked"/>
-            
-            <Button x:Name="Settings"
-                    Grid.Column="3"
-                    Margin="0"
-                    Text="Settings"
-                    TextColor="DarkBlue"
-                    FontSize="14"
-                    FontAttributes="Bold"
-                    HeightRequest="50"
-                    BackgroundColor="OrangeRed"
-                    BorderRadius="10"
-                    Clicked="Settings_Clicked"/>
-            
-        </Grid>
 
         <StackLayout Margin="15"
                      RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-                     RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=100}">
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=50}">
 
             <Picker x:Name="ChooseBudgetMonth"
                     Margin="5"

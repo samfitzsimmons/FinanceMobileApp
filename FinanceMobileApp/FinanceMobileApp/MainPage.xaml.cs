@@ -17,12 +17,12 @@ namespace FinanceMobileApp
 
         private void AddExpense_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new ExpenseAddPage());
+            Navigation.PushModalAsync(new NavigationPage(new ExpenseAddPage()));
         }
 
         private void AddBudget_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new BudgetAddPage());
+            Navigation.PushModalAsync(new NavigationPage(new BudgetAddPage()));
         }
     }
 }
