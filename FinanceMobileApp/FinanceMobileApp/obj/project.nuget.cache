@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IscZREBGK4JJ44L/lKoZmIVpQvSU4f9qr9rmAzqrfvw77RH6+STyiSJ3LD/RDEoSiz9Xh0JGhNCd4Vcj3AuKgQ==",
+  "dgSpecHash": "wOmI+J6G83M1wiWImlkPzAmRK6zW7GfeF5dxIhZy2soNUYtRNtzLEnSYrxIKaDg5jdh4GwYlnvT5bIauV+yL9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
+  "projectFilePath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crazy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\crazy\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

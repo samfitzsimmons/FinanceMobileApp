@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj": {}
+    "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj": {
+    "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
+        "projectUniqueName": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
         "projectName": "FinanceMobileApp.Android",
-        "projectPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
+        "projectPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
         "packagesPath": "C:\\Users\\crazy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\obj\\",
+        "outputPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
-                "projectPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
+              "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
+                "projectPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
               }
             }
           }
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
+    "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
+        "projectUniqueName": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
         "projectName": "FinanceMobileApp",
-        "projectPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
+        "projectPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
         "packagesPath": "C:\\Users\\crazy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\obj\\",
+        "outputPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

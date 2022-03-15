@@ -998,11 +998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
       "projectName": "FinanceMobileApp.iOS",
-      "projectPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
+      "projectPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
       "packagesPath": "C:\\Users\\crazy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1025,8 +1025,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
-              "projectPath": "C:\\Users\\crazy\\Source\\Repos\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
+            "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj": {
+              "projectPath": "C:\\Users\\crazy\\source\\repos\\FinanceApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj"
             }
           }
         }
