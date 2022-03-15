@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FinanceMobileApp.Models
 {
-    public class Expense
+    class Expense
     {
         public double Spending { get; set; }
         public string Name { get; set; }
@@ -13,8 +13,7 @@ namespace FinanceMobileApp.Models
         public string Description { get; set; }
 
 
-
-        public Expense(DateTime date , string name , double amount, string description)
+        public Expense( string name , double amount, DateTime date,string category,string description)
         {
             Date = date;
             Name = name;
@@ -25,7 +24,7 @@ namespace FinanceMobileApp.Models
         }
     }
 
-   public enum ExpenseCategory
+    public enum ExpenseCategory
     {
         Food_and_Drink,
         Shopping,

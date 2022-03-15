@@ -4,8 +4,14 @@
              x:Class="FinanceMobileApp.MainPage">
 
     <StackLayout>
-        <Label Text="Welcome!"/>
-        <Button Text="Add Expense" Clicked="Button_Clicked"/>
+      
+            <Label Text="Welcome!" />
+        <Button x:Name="AddExpense" Text="Add Your Expnese"  HeightRequest="40" WidthRequest="40" BorderRadius="20"
+                Clicked="AddExpense_Clicked" />
+
+        <Button x:Name="AddBudget" Text="Add Your Budget"  HeightRequest="40" WidthRequest="40" BorderRadius="20"
+                Clicked="AddBudget_Clicked" />
+
     </StackLayout>
 
 </ContentPage>
