@@ -24,5 +24,15 @@ namespace FinanceMobileApp
         {
             Navigation.PushModalAsync(new NavigationPage(new BudgetAddPage()));
         }
+
+        private void Budgets_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Expenses_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

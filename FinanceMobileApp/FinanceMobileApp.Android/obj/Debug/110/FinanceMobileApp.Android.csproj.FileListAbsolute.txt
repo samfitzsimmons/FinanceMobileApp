@@ -2302,3 +2302,4 @@ C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\sta
 C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\res\drawable\money.png

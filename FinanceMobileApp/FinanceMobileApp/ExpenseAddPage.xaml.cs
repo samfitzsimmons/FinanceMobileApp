@@ -175,5 +175,20 @@ namespace FinanceMobileApp
             Expenses.Add(new Expense(ExpenseName,ExpenseAmount,SelectedDate, SelectedItem, ExpenseDescription));
 
         }
+
+        private void Budgets_ExpenseAddPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new MainPage()));//Change to all budgets page
+        }
+
+        private void Expenses_ExpenseAddPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new MainPage()));//Change to expenses page
+        }
+
+        private void LogoToolBar_ExpenseAddPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new MainPage()));
+        }
     }
 }
