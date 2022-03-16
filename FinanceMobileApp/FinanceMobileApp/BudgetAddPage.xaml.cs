@@ -1,5 +1,7 @@
-﻿using System;
+﻿using FinanceMobileApp.Models;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,10 +39,38 @@ namespace FinanceMobileApp
 
         private void SaveBudget_Clicked(object sender, EventArgs e)
         {
+            var budget = (Budget)BindingContext;
 
+            if (string.IsNullOrEmpty(budget.BudgetFileName))
+            {
+                budget.BudgetMonth = (Months) ChooseBudgetMonth.SelectedItem;
+                budget.GoalTitle = GoalTitle.Text;
+                budget.GoalDescription = BudgetDescription.Text;
+                budget.BudgetAmount = Convert.ToDecimal(BudgetAmount.Text);
+                var budgetAmountString = Convert.ToString(budget.BudgetAmount);
+
+                budget.BudgetFileName = Path.Combine(Environment.GetFolderPath(
+                                  Environment.SpecialFolder.LocalApplicationData),
+                                  $"{Path.GetRandomFileName()}.{budget.GoalTitle}" +
+                                  $".{budget.BudgetMonth}.budgets.txt");
+
+                File.WriteAllText(budget.BudgetFileName, budgetAmountString);
+
+                if (budget.GoalDescription.Length > 0)
+                {
+                    budget.BudgetGoalDescriptionFilename = Path.Combine(Environment.GetFolderPath(
+                                      Environment.SpecialFolder.LocalApplicationData),
+                                      $"{Path.GetRandomFileName()}.{budget.GoalTitle}" +
+                                      $".{budget.BudgetMonth}.budgetdescription.txt");
+
+                    File.WriteAllText(budget.BudgetGoalDescriptionFilename, budget.GoalDescription);
+                }
+
+            }
         }
 
-        private void CancelBudget_Clicked(object sender, EventArgs e)
+
+        private void DeleteBudget_Clicked(object sender, EventArgs e)
         {
 
         }

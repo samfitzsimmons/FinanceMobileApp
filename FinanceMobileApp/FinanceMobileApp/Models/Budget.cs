@@ -29,5 +29,6 @@ namespace FinanceMobileApp.Models
         public List<Expense> ExpenseList { get; set; }
         public decimal TotalExpenseAmount { get; set; }
         public string BudgetFileName { get; set; }
+        public string BudgetGoalDescriptionFilename { get; set; }
     }
 }
