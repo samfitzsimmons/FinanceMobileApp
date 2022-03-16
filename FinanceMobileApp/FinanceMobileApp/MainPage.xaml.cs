@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using FinanceMobileApp.Models;
 
 namespace FinanceMobileApp
 {
@@ -22,7 +23,8 @@ namespace FinanceMobileApp
 
         private void AddBudget_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new BudgetAddPage()));
+            Navigation.PushModalAsync(new NavigationPage
+                (new BudgetAddPage{ BindingContext = new Budget() })); ;
         }
 
         private void Budgets_Clicked(object sender, EventArgs e)
