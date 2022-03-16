@@ -2,10 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FinanceMobileApp.ExpenseAddPage">
-    
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Home"/>
-        <ToolbarItem Text="Budgets"/>
+        <ToolbarItem x:Name="Budgets_ExpenseAddPage" 
+                     Text="Budgets" 
+                     Order="Primary"
+                     Clicked="Budgets_ExpenseAddPage_Clicked"/>
+        <ToolbarItem x:Name="Expenses_ExpenseAddPage" 
+                     Text="Expenses" 
+                     Order="Primary"
+                     Clicked="Expenses_ExpenseAddPage_Clicked"/>
+        <ToolbarItem x:Name="LogoToolBar_ExpenseAddPage" 
+                     IconImageSource="Assets/money.png" 
+                     Order="Primary"
+                     Clicked="LogoToolBar_ExpenseAddPage_Clicked"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content xmlns:local="clr-namespace:FinanceMobileApp.Models">

@@ -4,8 +4,18 @@
              x:Class="FinanceMobileApp.BudgetAddPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Home"/>
-        <ToolbarItem Text="Budgets"/>
+        <ToolbarItem x:Name="Budgets_BudgetAddPage" 
+                     Text="Budgets" 
+                     Order="Primary"
+                     Clicked="Budgets_BudgetAddPage_Clicked"/>
+        <ToolbarItem x:Name="Expenses_BudgetAddPage" 
+                     Text="Expenses" 
+                     Order="Primary"
+                     Clicked="Expenses_BudgetAddPage_Clicked"/>
+        <ToolbarItem x:Name="LogoToolBar_BudgetAddPage" 
+                     IconImageSource="Assets/money.png" 
+                     Order="Primary"
+                     Clicked="LogoToolBar_BudgetAddPage_Clicked"/>
     </ContentPage.ToolbarItems>
 
     <RelativeLayout>
@@ -78,8 +88,8 @@
                         FontSize="Medium"
                         FontAttributes="Bold"
                         HeightRequest="50"
-                        BackgroundColor="DeepSkyBlue"
-                        BorderColor="DeepSkyBlue"
+                        BackgroundColor="OrangeRed"
+                        BorderColor="OrangeRed"
                         BorderRadius="10"
                         BorderWidth="2"
                         Clicked="CancelBudget_Clicked"/>
