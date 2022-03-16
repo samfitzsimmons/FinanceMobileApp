@@ -80,10 +80,10 @@
                         BorderWidth="2"
                         Clicked="SaveBudget_Clicked"/>
 
-                <Button x:Name="CancelBudget"
+                <Button x:Name="DeleteBudget"
                         Grid.Column="1"
                         Margin="5"
-                        Text="Cancel"
+                        Text="Delete"
                         TextColor="DarkBlue"
                         FontSize="Medium"
                         FontAttributes="Bold"
@@ -92,7 +92,7 @@
                         BorderColor="OrangeRed"
                         BorderRadius="10"
                         BorderWidth="2"
-                        Clicked="CancelBudget_Clicked"/>
+                        Clicked="DeleteBudget_Clicked"/>
                 
             </Grid>
             
