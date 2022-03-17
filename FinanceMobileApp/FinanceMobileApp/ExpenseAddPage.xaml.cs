@@ -9,23 +9,19 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using FinanceMobileApp.Models;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace FinanceMobileApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ExpenseAddPage : ContentPage
     {
-      
-
         private DateTime SelectedDate; //The selected date by the user
         public string Selected_Category;// The selected Category from the list 
         public string ExpenseName;
         public double ExpenseAmount;
         public string ExpenseDescription;
-        
 
-
-        private ObservableCollection<Expense> Expenses;// Observable collection that has all expenses loaded
         public List<Category> Categories;
         public string SelectedItem;
 
@@ -37,7 +33,7 @@ namespace FinanceMobileApp
             Expense_Category.ItemDisplayBinding = new Binding("CategoryName");
 
             Categories = new List<Category>();
-       
+
 
             Categories.Add(new Category
             {
@@ -133,8 +129,8 @@ namespace FinanceMobileApp
             });
 
 
-            Expense_Category.ItemsSource= Categories;
-            Expense_Category.ItemDisplayBinding= new Binding("CategoryName");
+            Expense_Category.ItemsSource = Categories;
+            Expense_Category.ItemDisplayBinding = new Binding("CategoryName");
 
 
         }
@@ -156,24 +152,40 @@ namespace FinanceMobileApp
         }
 
 
-        private  void Save_Clicked(object sender, EventArgs e)
+        private void Save_Clicked(object sender, EventArgs e)
         {
-            AddNewExpense();
-            // Bekalu: Add Navigation to the list of the expenses
+            ExpenseName = Expense_Name.Text;
+            ExpenseDescription = Description.Text;
+            ExpenseAmount = Convert.ToDouble(Expense_Amount);
+
+            var expense = (Expense)BindingContext;
+            expense.Date = SelectedDate;
+            expense.Name = ExpenseName;
+            expense.Description = ExpenseDescription;
+            expense.Spending = ExpenseAmount;
+            string ExpenseText = expense.Name + Environment.NewLine + expense.Date + Environment.NewLine + expense.Spending + Environment.NewLine + expense.Description +
+                Environment.NewLine;
+
+            if (string.IsNullOrEmpty(expense.FileName))
+            {
+
+
+                expense.FileName = Path.Combine(Environment.GetFolderPath(
+                                  Environment.SpecialFolder.LocalApplicationData),
+                                  $"{Path.GetRandomFileName()} .expenses.txt");
+
+
+                File.WriteAllText(expense.FileName, ExpenseText);
+
+            }
+            Navigation.PushModalAsync(new NavigationPage(new MainPage())); //*Change to the list of expenses 
+
+
         }
 
         private async void Cancel_Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
-        }
-        public void AddNewExpense()
-        {
-            ExpenseName = Expense_Name.Text;
-            ExpenseAmount = Convert.ToDouble(Expense_Amount.Text);
-            Expenses = new ObservableCollection<Expense>();
-            ExpenseDescription = Description.Text;
-            Expenses.Add(new Expense(ExpenseName,ExpenseAmount,SelectedDate, SelectedItem, ExpenseDescription));
-
         }
 
         private void Budgets_ExpenseAddPage_Clicked(object sender, EventArgs e)

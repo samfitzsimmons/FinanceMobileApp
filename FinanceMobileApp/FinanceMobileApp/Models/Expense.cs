@@ -13,15 +13,7 @@ namespace FinanceMobileApp.Models
         public string Description { get; set; }
 
 
-        public Expense( string name , double amount, DateTime date,string category,string description)
-        {
-            Date = date;
-            Name = name;
-            Spending = amount;
-            Description = description;
-
-
-        }
+        
     }
 
     public enum ExpenseCategory

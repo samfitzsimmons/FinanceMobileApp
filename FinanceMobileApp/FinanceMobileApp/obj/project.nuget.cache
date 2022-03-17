@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1e5+lrB2xLRZVxmn+Hsl8NKqs562/8Ml1h7d3V6q2H19QXicLcOJOGmO1OpvRa6f4F8A2J14yIRS1LDjAB44RQ==",
+  "dgSpecHash": "aYtX9DuDMJ1z0o3NylGWQOqto/w8u8yqYGZMQmWLPO6MY1vUZVDgk/DmbpoBwV7LpAcGvnisL7TN6EIIHTR9qA==",
   "success": true,
-  "projectFilePath": "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
+  "projectFilePath": "C:\\Users\\crazy\\source\\repos\\FinanceMobileApplication1000\\FinanceMobileApp\\FinanceMobileApp\\FinanceMobileApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\burro\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\burro\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\burro\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

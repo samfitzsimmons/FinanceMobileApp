@@ -16,9 +16,9 @@ namespace FinanceMobileApp
             InitializeComponent();
         }
 
-        private void AddExpense_Clicked(object sender, EventArgs e)
+        private async void AddExpense_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new ExpenseAddPage()));
+            await Navigation.PushModalAsync(new NavigationPage(new ExpenseAddPage { BindingContext = new Expense() }));
         }
 
         private void AddBudget_Clicked(object sender, EventArgs e)

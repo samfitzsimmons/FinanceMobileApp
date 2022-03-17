@@ -23,21 +23,33 @@
             <Label Text="Enter your expense details:" />
             <DatePicker x:Name="ExpenseDate"
                     Format="D"
-                    DateSelected="ExpenseDate_DateSelected"  />
+                    DateSelected="ExpenseDate_DateSelected" 
+                         Margin="5"
+                    HeightRequest="80"/>
             <Entry x:Name="Expense_Name"  Placeholder="Expense Name"
+                    Margin="5"
+               
+                    HeightRequest="80"
                    />
             <Entry x:Name="Expense_Amount"  Placeholder="Expense Amount"
+                    Margin="5"
+                    HeightRequest="80"
                    />
             <Picker x:Name="Expense_Category" Title="Choose Expense Category" 
+                     Margin="5"
                     SelectedIndexChanged="Expense_Category_SelectedIndexChanged"
                     ItemsSource="{Binding Categories}"
                     ItemDisplayBinding="{Binding CategoryName}"
                     >
             </Picker>
-            <Label Text="Expense Description"/>
-            <Editor x:Name="Description" 
-                    HeightRequest="100" />
-                <Grid>
+
+
+            <Editor x:Name="Description" Placeholder="Expense Description" 
+                    HeightRequest="100" 
+                     Margin="5"
+                
+                 />
+            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -45,14 +57,14 @@
                 <Button x:Name="Save" Text="Save Expense" 
                         Clicked="Save_Clicked"
                         BorderRadius="20"/>
-                        
+
                 <Button x:Name="Cancel " Text="Cancel"
                         Clicked="Cancel_Button_Clicked"
                         BorderRadius="20"
                         Grid.Column="1"
                         />
             </Grid>
-         
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
