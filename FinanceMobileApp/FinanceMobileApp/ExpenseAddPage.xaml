@@ -41,7 +41,9 @@
                      Margin="5"
                 
                  />
-            <ListView x:Name="Categories_List">
+            <Label Text="Choose the expense category " Margin="5"/>
+            
+            <ListView x:Name="Categories_List" BindingContext="Categories">
                 <ListView.ItemTemplate>
                     <DataTemplate>
 
