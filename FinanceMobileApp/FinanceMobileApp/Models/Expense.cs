@@ -6,7 +6,7 @@ namespace FinanceMobileApp.Models
 {
     class Expense
     {
-        public double Spending { get; set; }
+        public decimal Spending { get; set; }
         public string Name { get; set; }
         public DateTime Date { get; set; }
         public string FileName { get; set; }

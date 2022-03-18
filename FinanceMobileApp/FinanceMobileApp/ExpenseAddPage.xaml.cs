@@ -19,7 +19,7 @@ namespace FinanceMobileApp
         private DateTime SelectedDate; //The selected date by the user
         public string Selected_Category;// The selected Category from the list 
         public string ExpenseName;
-        public double ExpenseAmount;
+        public decimal ExpenseAmount;
         public string ExpenseDescription;
 
         public List<Category> Categories;
@@ -156,7 +156,7 @@ namespace FinanceMobileApp
         {
             ExpenseName = Expense_Name.Text;
             ExpenseDescription = Description.Text;
-            ExpenseAmount = Convert.ToDouble(Expense_Amount);
+            ExpenseAmount = Convert.ToDecimal(Expense_Amount);
 
             var expense = (Expense)BindingContext;
             expense.Date = SelectedDate;
