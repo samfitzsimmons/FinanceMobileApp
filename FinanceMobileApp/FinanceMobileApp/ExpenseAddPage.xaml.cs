@@ -154,15 +154,32 @@ namespace FinanceMobileApp
 
         private void Save_Clicked(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(Expense_Name.Text))
+            {
+                Expense_Name.Text = string.Empty;
+
+            }
+
+            if (string.IsNullOrEmpty(Description.Text))
+            {
+                Description.Text = string.Empty;
+
+            }
+
+            if (string.IsNullOrEmpty(Expense_Amount.Text))
+            {
+                ExpenseAmount=decimal.Zero;
+
+            }
             ExpenseName = Expense_Name.Text;
             ExpenseDescription = Description.Text;
-            ExpenseAmount = Convert.ToDecimal(Expense_Amount);
+           
 
             var expense = (Expense)BindingContext;
             expense.Date = SelectedDate;
             expense.Name = ExpenseName;
             expense.Description = ExpenseDescription;
-            expense.Spending = ExpenseAmount;
+            expense.Spending = Convert.ToDecimal(ExpenseAmount);
             string ExpenseText = expense.Name + Environment.NewLine + expense.Date + Environment.NewLine + expense.Spending + Environment.NewLine + expense.Description +
                 Environment.NewLine;
 
