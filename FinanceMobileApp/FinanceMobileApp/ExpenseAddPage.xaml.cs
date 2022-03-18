@@ -74,94 +74,94 @@ namespace FinanceMobileApp
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Food_and_Drink,
-                 ImageUrl = "Assets/Icons/catering-icon.png"
+                 ImageUrl = "Assets/catering.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Shopping,
-                 ImageUrl = "Assets/Icons/shopping-icon.png"
+                 ImageUrl = "Assets/shopping.png"
              });
 
-             Categories.Add(new Category
+            /* Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Transposrt,
                  ImageUrl = ""
-             });
+             });*/
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Home,
-                 ImageUrl = "Assets/Icons/home-icon.png"
+                 ImageUrl = "Assets/home.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Bills_and_Fees,
-                 ImageUrl = "Assets/Icons/calculator-icon.png"
+                 ImageUrl = "Assets/calculator.png"
              });
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Entertainment,
-                 ImageUrl = "Assets/Iconscalculator-icon.png"
+                 ImageUrl = "Assets/game.png"
              });
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Travel,
-                 ImageUrl = "Assets/Icons/plane-icon.png"
+                 ImageUrl = "Assets/plane.png"
              });
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.HealthCare,
-                 ImageUrl = "Assets/Icons/hospital-icon.png"
+                 ImageUrl = "Assets/hospital.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Eductaion,
-                 ImageUrl = "Assets/Icons/notepad-icon.png"
+                 ImageUrl = "Assets/notepad.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Groceries,
-                 ImageUrl = "Assets/Icons/cart-icon.png"
+                 ImageUrl = "Assets/cart.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Family_and_Personal,
-                 ImageUrl = "Assets/Icons/contact-icon.png"
+                 ImageUrl = "Assets/contact.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Gifts,
-                 ImageUrl = "Assets/Icons/gift-icon.png"
+                 ImageUrl = "Assets/gift.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Sports,
-                 ImageUrl = "Assets/Icons/market strategy-icon.png"
+                 ImageUrl = "Assets/marketStrategy.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Beauty,
-                 ImageUrl = "Assets/Icons/watch-icon.png"
+                 ImageUrl = "Assets/watch.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Work,
-                 ImageUrl = "Assets/Icons/market analysis-icon.png"
+                 ImageUrl = "Assets/marketAnalysis.png"
              });
 
              Categories.Add(new Category
              {
                  CategoryName = ExpenseCategory.Other,
-                 ImageUrl = "Assets/Icons/find-icon.png"
+                 ImageUrl = "Assets/find.png"
              });
 
             Categories_List.ItemTemplate = new DataTemplate(typeof(ImageCell));

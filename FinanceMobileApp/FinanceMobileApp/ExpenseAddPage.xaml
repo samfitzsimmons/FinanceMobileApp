@@ -24,25 +24,25 @@
             <DatePicker x:Name="ExpenseDate"
                     Format="D"
                     DateSelected="ExpenseDate_DateSelected" 
-                         Margin="5"
+                       
                     HeightRequest="40"/>
             <Entry x:Name="Expense_Name"  Placeholder="Expense Name"
-                    Margin="5"
+                   
                
                     HeightRequest="40"
                    />
             <Entry x:Name="Expense_Amount"  Placeholder="Expense Amount"
-                    Margin="5"
+                  
                     HeightRequest="40"
                    />
 
             <Editor x:Name="Description" Placeholder="Expense Description" 
                     HeightRequest="50" 
-                     Margin="5"
+                    
                 
                  />
             <Label Text="Choose the expense category " Margin="5"/>
-            
+
             <ListView x:Name="Categories_List" BindingContext="Categories">
                 <ListView.ItemTemplate>
                     <DataTemplate>
