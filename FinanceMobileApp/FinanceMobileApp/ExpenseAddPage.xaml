@@ -24,31 +24,35 @@
             <DatePicker x:Name="ExpenseDate"
                     Format="D"
                     DateSelected="ExpenseDate_DateSelected" 
-                         Margin="5"
-                    HeightRequest="80"/>
+                       
+                    HeightRequest="40"/>
             <Entry x:Name="Expense_Name"  Placeholder="Expense Name"
-                    Margin="5"
+                   
                
-                    HeightRequest="80"
+                    HeightRequest="40"
                    />
             <Entry x:Name="Expense_Amount"  Placeholder="Expense Amount"
-                    Margin="5"
-                    HeightRequest="80"
+                  
+                    HeightRequest="40"
                    />
-            <Picker x:Name="Expense_Category" Title="Choose Expense Category" 
-                     Margin="5"
-                    SelectedIndexChanged="Expense_Category_SelectedIndexChanged"
-                    ItemsSource="{Binding Categories}"
-                    ItemDisplayBinding="{Binding CategoryName}"
-                    >
-            </Picker>
-
 
             <Editor x:Name="Description" Placeholder="Expense Description" 
-                    HeightRequest="100" 
-                     Margin="5"
+                    HeightRequest="50" 
+                    
                 
                  />
+            <Label Text="Choose the expense category " Margin="5"/>
+
+            <ListView x:Name="Categories_List" BindingContext="Categories">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ImageCell Text="{Binding CategoryName}"  ImageSource="{Binding ImageUrl}" />
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />

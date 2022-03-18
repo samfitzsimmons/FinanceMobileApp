@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i4+/V/2jDGKzvcQO7vymvJsjKUP8X8yyw9Z20YrUk6r38L49cL1fUWu1hsRAyI5JWUpwYDhcRZCL1W5d01nYIQ==",
+  "dgSpecHash": "Qhn930/37T5Z1oAy+VyUnby4SkMTS74DLl8Goumy2h0OFJrL38iftstFW92eA2Kz7WpkkU+gicfTyoeScQcfcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crazy\\source\\repos\\FinanceMobileApplication1000\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
+  "projectFilePath": "C:\\Users\\crazy\\source\\repos\\FinanceMobileApp_18_03\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crazy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
