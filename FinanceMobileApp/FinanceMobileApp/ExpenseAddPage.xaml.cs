@@ -25,7 +25,8 @@ namespace FinanceMobileApp
         public List<Category> Categories;
      //   public List<ExpenseCategory>Category_List;
      //  public List<string> Images;
-        public string SelectedItem;
+        public Category SelectedItem;
+        
 
 
         public ExpenseAddPage()
@@ -172,16 +173,7 @@ namespace FinanceMobileApp
       
         }
 
-        private void Expense_Category_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var picker = (Picker)sender;
-            int selectedIndex = picker.SelectedIndex;
-
-            if (selectedIndex != -1)
-            {
-                SelectedItem = picker.Items[selectedIndex];
-            }
-        }
+       
 
         private void ExpenseDate_DateSelected(object sender, DateChangedEventArgs e)
         {
@@ -210,15 +202,18 @@ namespace FinanceMobileApp
             }
             ExpenseName = Expense_Name.Text;
             ExpenseDescription = Description.Text;
+            ExpenseAmount = Convert.ToDecimal(Expense_Amount.Text);
            
 
             var expense = (Expense)BindingContext;
             expense.Date = SelectedDate;
             expense.Name = ExpenseName;
             expense.Description = ExpenseDescription;
-            expense.Spending = Convert.ToDecimal(ExpenseAmount);
+            expense.Spending = ExpenseAmount;
+            expense.Category = SelectedItem.CategoryName.ToString();
+
             string ExpenseText = expense.Name + Environment.NewLine + expense.Date + Environment.NewLine + expense.Spending + Environment.NewLine + expense.Description +
-                Environment.NewLine;
+                Environment.NewLine+expense.Category+ Environment.NewLine;
 
             if (string.IsNullOrEmpty(expense.FileName))
             {
@@ -255,6 +250,12 @@ namespace FinanceMobileApp
         private void LogoToolBar_ExpenseAddPage_Clicked(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new NavigationPage(new MainPage()));
+        }
+
+        private void Categories_List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            SelectedItem = (Category)e.SelectedItem;
+            
         }
     }
 }
