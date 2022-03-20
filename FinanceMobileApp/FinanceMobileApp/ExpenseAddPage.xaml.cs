@@ -242,7 +242,7 @@ namespace FinanceMobileApp
 
         private void Expenses_ExpenseAddPage_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new MainPage()));//Change to expenses page
+            Navigation.PushModalAsync(new NavigationPage(new ExpenseList()));
         }
 
         private void LogoToolBar_ExpenseAddPage_Clicked(object sender, EventArgs e)

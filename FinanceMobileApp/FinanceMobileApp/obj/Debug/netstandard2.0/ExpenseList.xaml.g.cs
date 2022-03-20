@@ -17,13 +17,13 @@ namespace FinanceMobileApp {
     public partial class ExpenseList : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ToolbarItem Budgets_ExpenseAddPage;
+        private global::Xamarin.Forms.ToolbarItem Budgets_ExpenseList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ToolbarItem Expenses_ExpenseAddPage;
+        private global::Xamarin.Forms.ToolbarItem Expenses_ExpenseList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ToolbarItem LogoToolBar_ExpenseAddPage;
+        private global::Xamarin.Forms.ToolbarItem LogoToolBar_ExpenseList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView ExpenseListView;
@@ -31,9 +31,9 @@ namespace FinanceMobileApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ExpenseList));
-            Budgets_ExpenseAddPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ToolbarItem>(this, "Budgets_ExpenseAddPage");
-            Expenses_ExpenseAddPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ToolbarItem>(this, "Expenses_ExpenseAddPage");
-            LogoToolBar_ExpenseAddPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ToolbarItem>(this, "LogoToolBar_ExpenseAddPage");
+            Budgets_ExpenseList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ToolbarItem>(this, "Budgets_ExpenseList");
+            Expenses_ExpenseList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ToolbarItem>(this, "Expenses_ExpenseList");
+            LogoToolBar_ExpenseList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ToolbarItem>(this, "LogoToolBar_ExpenseList");
             ExpenseListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ExpenseListView");
         }
     }
