@@ -5,18 +5,18 @@
              xmlns:model="clr-namespace:FinanceMobileApp.Models">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="Budgets_ExpenseAddPage" 
+        <ToolbarItem x:Name="Budgets_ExpenseList" 
                      Text="Budgets" 
                      Order="Primary"
-                     Clicked="Budgets_ExpenseAddPage_Clicked"/>
-        <ToolbarItem x:Name="Expenses_ExpenseAddPage" 
+                     Clicked="Budgets_ExpenseList_Clicked"/>
+        <ToolbarItem x:Name="Expenses_ExpenseList" 
                      Text="Expenses" 
                      Order="Primary"
                      Clicked="Expenses_ExpenseAddPage_Clicked"/>
-        <ToolbarItem x:Name="LogoToolBar_ExpenseAddPage" 
+        <ToolbarItem x:Name="LogoToolBar_ExpenseList" 
                      IconImageSource="Assets/money.png" 
                      Order="Primary"
-                     Clicked="LogoToolBar_ExpenseAddPage_Clicked"/>
+                     Clicked="LogoToolBar_ExpenseList_Clicked"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

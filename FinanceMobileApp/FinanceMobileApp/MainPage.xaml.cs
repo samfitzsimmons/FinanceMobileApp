@@ -24,7 +24,7 @@ namespace FinanceMobileApp
         private void AddBudget_Clicked(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new NavigationPage
-                (new BudgetAddPage{ BindingContext = new Budget() })); ;
+                (new BudgetAddPage{ BindingContext = new Budget() })); 
         }
 
         private void Budgets_Clicked(object sender, EventArgs e)
@@ -34,7 +34,8 @@ namespace FinanceMobileApp
 
         private void Expenses_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushModalAsync(new NavigationPage
+                (new ExpenseList()));
         }
     }
 }
