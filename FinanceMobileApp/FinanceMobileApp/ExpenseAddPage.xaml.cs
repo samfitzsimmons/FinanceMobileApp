@@ -227,7 +227,7 @@ namespace FinanceMobileApp
                 File.WriteAllText(expense.FileName, ExpenseText);
 
             }
-            Navigation.PushModalAsync(new NavigationPage(new MainPage())); //*Change to the list of expenses 
+            Navigation.PushModalAsync(new NavigationPage(new ExpenseList())); 
 
 
         }
