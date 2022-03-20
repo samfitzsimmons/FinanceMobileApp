@@ -24,7 +24,7 @@ namespace FinanceMobileApp
         {
             var expenses = new List<Expense>();
             var files = Directory.EnumerateFiles(Environment.GetFolderPath(
-                    Environment.SpecialFolder.LocalApplicationData), "*.notes.txt");
+                    Environment.SpecialFolder.LocalApplicationData), "*.expenses.txt");
             foreach (var filename in files)
             {
                 var expense = new Expense

@@ -228,8 +228,6 @@ namespace FinanceMobileApp
 
             }
             Navigation.PushModalAsync(new NavigationPage(new ExpenseList())); 
-
-
         }
 
         private async void Cancel_Button_Clicked(object sender, EventArgs e)
