@@ -8,7 +8,7 @@
             <Button Text="Add Expense" Clicked="OnExpenseAddedClick" />
             <ListView x:Name="ExpenseListView"
                   Margin="20"
-                  ItemSelected="ExpenseListView">
+                  ItemSelected="ExpenseListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="model:Expense">
                         <TextCell Text="{Binding Name}" Detail="{Binding Date}" />

@@ -37,7 +37,7 @@ namespace FinanceMobileApp
             ExpenseListView.ItemsSource = expenses.OrderByDescending(n => n.Date);
         }
 
-        private async void OnNoteAddedClicked(object sender, EventArgs e)
+        private async void OnExpenseAddedClick(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ExpenseAddPage
             {
@@ -45,7 +45,7 @@ namespace FinanceMobileApp
             });
         }
 
-        private async void NotesListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void ExpenseListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             await Navigation.PushModalAsync(new ExpenseAddPage
             {
