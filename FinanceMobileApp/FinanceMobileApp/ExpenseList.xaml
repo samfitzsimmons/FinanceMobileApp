@@ -3,6 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FinanceMobileApp.ExpenseList"
              xmlns:model="clr-namespace:FinanceMobileApp.Models">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Budgets_ExpenseList" 
+                     Text="Budgets" 
+                     Order="Primary"
+                     Clicked="Budgets_ExpenseList_Clicked"/>
+        <ToolbarItem x:Name="Expenses_ExpenseList" 
+                     Text="Expenses" 
+                     Order="Primary"
+                     Clicked="Expenses_ExpenseAddPage_Clicked"/>
+        <ToolbarItem x:Name="LogoToolBar_ExpenseList" 
+                     IconImageSource="Assets/money.png" 
+                     Order="Primary"
+                     Clicked="LogoToolBar_ExpenseList_Clicked"/>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Add Expense" Clicked="OnExpenseAddedClick" />
