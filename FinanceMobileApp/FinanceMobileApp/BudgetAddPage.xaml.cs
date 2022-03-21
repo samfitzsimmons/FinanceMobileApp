@@ -41,7 +41,7 @@ namespace FinanceMobileApp
         {
             var budget = (Budget)BindingContext;
 
-            if (string.IsNullOrEmpty(budget.BudgetFileName) && BudgetAmount.Text.Length > 0)
+            if (string.IsNullOrEmpty(budget.BudgetFileName) && !string.IsNullOrEmpty(BudgetAmount.Text))
             {
                 
                 budget.BudgetMonth = ConvertToMonths( (string) ChooseBudgetMonth.SelectedItem);
@@ -57,7 +57,7 @@ namespace FinanceMobileApp
 
                 File.WriteAllText(budget.BudgetFileName, budgetAmountString);
 
-                if (budget.GoalDescription.Length > 0)
+                if (!string.IsNullOrEmpty(budget.GoalDescription))
                 {
                     budget.BudgetGoalDescriptionFilename = Path.Combine(Environment.GetFolderPath(
                                       Environment.SpecialFolder.LocalApplicationData),
