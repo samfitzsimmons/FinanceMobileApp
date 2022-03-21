@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wmcQUX70gtdM+rP0J4QDFrarrzafXMfqDwy9XyHsecGInkX8SWz4Oh8gzFXeDFVErzKn96lmT3++bkKi2y25HQ==",
+  "dgSpecHash": "c3JieNYeVpYfy2cAk2RQOAcq/A4VoWoF4q30LFLq7tvDhdEzLxYqGWeU3KkdDd/aCGbj9TSSZnCjXdVtW2UkTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crazy\\source\\repos\\FinanceMobileApp_20_03\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
+  "projectFilePath": "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp.Android\\FinanceMobileApp.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\crazy\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\crazy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\burro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\burro\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

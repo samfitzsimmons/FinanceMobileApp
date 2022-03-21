@@ -43,7 +43,8 @@ namespace FinanceMobileApp
 
             if (string.IsNullOrEmpty(budget.BudgetFileName) && BudgetAmount.Text.Length > 0)
             {
-                budget.BudgetMonth = (Months) ChooseBudgetMonth.SelectedItem;
+                
+                budget.BudgetMonth = ConvertToMonths( (string) ChooseBudgetMonth.SelectedItem);
                 budget.GoalTitle = GoalTitle.Text;
                 budget.GoalDescription = BudgetDescription.Text;
                 budget.BudgetAmount = Convert.ToDecimal(BudgetAmount.Text);
