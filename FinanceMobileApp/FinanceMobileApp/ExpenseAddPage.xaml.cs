@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 using FinanceMobileApp.Models;
 using System.Collections.ObjectModel;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace FinanceMobileApp
 {
@@ -17,57 +18,15 @@ namespace FinanceMobileApp
     public partial class ExpenseAddPage : ContentPage
     {
         private DateTime SelectedDate; //The selected date by the user
-        public string Selected_Category;// The selected Category from the list 
-        public string ExpenseName;
-        public decimal ExpenseAmount;
-        public string ExpenseDescription;
-
+        private string Selected_Category;// The selected Category from the list 
+        private decimal ExpenseAmount;
+        private string ExpenseDescription;
         public List<Category> Categories;
-     //   public List<ExpenseCategory>Category_List;
-     //  public List<string> Images;
         public Category SelectedItem;
-        
-
 
         public ExpenseAddPage()
         {
             InitializeComponent();
-
-          /*  Category_List = new List<ExpenseCategory>();
-            Images = new List<string>();
-            Category_List.Add(ExpenseCategory.Beauty);
-            Category_List.Add(ExpenseCategory.Bills_and_Fees);
-            Category_List.Add(ExpenseCategory.Eductaion);
-            Category_List.Add(ExpenseCategory.Entertainment);
-            Category_List.Add(ExpenseCategory.Family_and_Personal);
-            Category_List.Add(ExpenseCategory.Food_and_Drink);
-            Category_List.Add(ExpenseCategory.Gifts);
-            Category_List.Add(ExpenseCategory.Groceries);
-            Category_List.Add(ExpenseCategory.HealthCare);
-            Category_List.Add(ExpenseCategory.Other);
-            Category_List.Add(ExpenseCategory.Gifts);
-            Category_List.Add(ExpenseCategory.Shopping);
-            Category_List.Add(ExpenseCategory.Sports);
-            Category_List.Add(ExpenseCategory.Travel);
-            Category_List.Add(ExpenseCategory.Work);
-            Category_List.Add(ExpenseCategory.Home);
-
-            Images.Add("Assets/Icons/watch - icon.png");
-            Images.Add("Assets/Icons/calculator-icon.png");
-            Images.Add("Assets/Icons/notepad-icon.png");
-            Images.Add("Assets/Icons/game-icon.png");
-            Images.Add("Assets/Icons/contact-icon.png");
-            Images.Add("Assets/Icons/catering-icon.png");
-            Images.Add("Assets/Icons/gift-icon.png");
-            Images.Add("Assets/Icons/shopping-icon.png");
-            Images.Add("Assets/Icons/market strategy-icon.png");
-            Images.Add("Assets/Icons/plane-icon.png");
-            Images.Add("Assets/Icons/market analysis-icon.png");
-            Images.Add("Assets/Icons/home-icon.png");
-          */
-
-         
-            
 
              Categories = new List<Category>();
 
@@ -83,12 +42,6 @@ namespace FinanceMobileApp
                  CategoryName = ExpenseCategory.Shopping,
                  ImageUrl = "Assets/shopping.png"
              });
-
-            /* Categories.Add(new Category
-             {
-                 CategoryName = ExpenseCategory.Transposrt,
-                 ImageUrl = ""
-             });*/
 
              Categories.Add(new Category
              {
@@ -168,12 +121,36 @@ namespace FinanceMobileApp
             Categories_List.ItemTemplate = new DataTemplate(typeof(ImageCell));
             Categories_List.ItemTemplate.SetBinding(ImageCell.TextProperty, "CategoryName");
             Categories_List.ItemTemplate.SetBinding(ImageCell.ImageSourceProperty, "ImageUrl");
-
             Categories_List.ItemsSource = Categories;
       
         }
 
-       
+        protected override void OnAppearing()
+        {
+            var expense = (Expense)BindingContext;
+            if (!string.IsNullOrEmpty(expense.FileName))
+            {
+                string expenseJson = File.ReadAllText(expense.FileName);
+                Expense deserializedExpense = JsonConvert.DeserializeObject<Expense>(expenseJson);
+                ExpenseDate.Date = deserializedExpense.Date;
+                Name.Text = deserializedExpense.Name;
+                Expense_Amount.Text = deserializedExpense.Spending.ToString();
+                Description.Text = deserializedExpense.Description;
+                SelectedItem = getCategory(deserializedExpense);
+            }
+        }
+
+        private Category getCategory(Expense deserializedExpense) 
+        {
+            int indexOfCategory = 0;
+            Categories.ForEach(category => {
+                if (category.ImageUrl == deserializedExpense.Category)
+                {
+                    indexOfCategory = Categories.IndexOf(category);
+                }
+            });
+            return Categories[indexOfCategory];
+        }
 
         private void ExpenseDate_DateSelected(object sender, DateChangedEventArgs e)
         {
@@ -183,9 +160,9 @@ namespace FinanceMobileApp
 
         private void Save_Clicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Expense_Name.Text))
+            if (string.IsNullOrEmpty(Name.Text))
             {
-                Expense_Name.Text = string.Empty;
+                Name.Text = string.Empty;
 
             }
 
@@ -200,33 +177,27 @@ namespace FinanceMobileApp
                 ExpenseAmount=decimal.Zero;
 
             }
-            ExpenseName = Expense_Name.Text;
+           
             ExpenseDescription = Description.Text;
             ExpenseAmount = Convert.ToDecimal(Expense_Amount.Text);
            
-
+            // we are creating a new expense here. 
             var expense = (Expense)BindingContext;
             expense.Date = SelectedDate;
-            expense.Name = ExpenseName;
+            expense.Name = Name.Text;
             expense.Description = ExpenseDescription;
             expense.Spending = ExpenseAmount;
-            expense.Category = SelectedItem.CategoryName.ToString();
-
-            string ExpenseText = expense.Name + Environment.NewLine + expense.Date + Environment.NewLine + expense.Spending + Environment.NewLine + expense.Description +
-                Environment.NewLine+expense.Category+ Environment.NewLine;
-
+            expense.Category = SelectedItem.ImageUrl;
+           
             if (string.IsNullOrEmpty(expense.FileName))
             {
-
-
                 expense.FileName = Path.Combine(Environment.GetFolderPath(
                                   Environment.SpecialFolder.LocalApplicationData),
                                   $"{Path.GetRandomFileName()} .expenses.txt");
-
-
-                File.WriteAllText(expense.FileName, ExpenseText);
-
+                
             }
+            var expenseJson = JsonConvert.SerializeObject(expense);
+            File.WriteAllText(expense.FileName, expenseJson);
             Navigation.PushModalAsync(new NavigationPage(new ExpenseList())); 
         }
 
@@ -253,7 +224,6 @@ namespace FinanceMobileApp
         private void Categories_List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             SelectedItem = (Category)e.SelectedItem;
-            
         }
     }
 }
