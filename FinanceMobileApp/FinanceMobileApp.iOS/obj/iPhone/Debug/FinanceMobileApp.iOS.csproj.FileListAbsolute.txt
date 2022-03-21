@@ -410,3 +410,4 @@ C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobil
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp.iOS\obj\iPhone\Debug\FinanceMobileApp.iOS.exe
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp.iOS\obj\iPhone\Debug\FinanceMobileApp.iOS.pdb
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll

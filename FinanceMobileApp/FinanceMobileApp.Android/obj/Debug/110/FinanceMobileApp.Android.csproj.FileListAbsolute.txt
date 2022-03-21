@@ -4080,3 +4080,4 @@ C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobil
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll
