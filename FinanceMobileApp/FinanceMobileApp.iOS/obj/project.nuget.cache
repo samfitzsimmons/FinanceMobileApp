@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/ydpkJ046DWgajLVIVqaeRB7yOJRQ7rXgxFhalhXHk2Uk4CCl5NoXFpiIpGvWMnWOagEOLjncDiplsXU3iiDcQ==",
+  "dgSpecHash": "7CBu47HpEgBom/udaZZis69u+NuYexklk2yv1xeD8M7stUS/t0De1xzoFkjOSTTwXVHvfZkKzvCiypCm7rasmw==",
   "success": true,
-  "projectFilePath": "C:\\KalAcademy\\FinApp\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
+  "projectFilePath": "C:\\Users\\crazy\\source\\repos\\FinanceMobileApp_20_03\\FinanceMobileApp\\FinanceMobileApp.iOS\\FinanceMobileApp.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\burro\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

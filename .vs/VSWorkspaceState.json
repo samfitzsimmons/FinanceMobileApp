@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FinanceMobileApp",
+    "\\FinanceMobileApp\\FinanceMobileApp"
   ],
-  "SelectedNode": "\\FinanceMobileApp.sln",
+  "SelectedNode": "\\FinanceMobileApp\\FinanceMobileApp\\MainPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

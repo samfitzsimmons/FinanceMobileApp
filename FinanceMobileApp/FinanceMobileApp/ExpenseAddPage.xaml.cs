@@ -133,11 +133,12 @@ namespace FinanceMobileApp
                 string expenseJson = File.ReadAllText(expense.FileName);
                 Expense deserializedExpense = JsonConvert.DeserializeObject<Expense>(expenseJson);
                 ExpenseDate.Date = deserializedExpense.Date;
-                Name.Text = deserializedExpense.Name;
+                Expense_Name.Text = deserializedExpense.Name;
                 Expense_Amount.Text = deserializedExpense.Spending.ToString();
                 Description.Text = deserializedExpense.Description;
                 SelectedItem = getCategory(deserializedExpense);
             }
+            
         }
 
         private Category getCategory(Expense deserializedExpense) 
@@ -162,9 +163,9 @@ namespace FinanceMobileApp
 
         private void Save_Clicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Name.Text))
+            if (string.IsNullOrEmpty(Expense_Name.Text))
             {
-                Name.Text = string.Empty;
+                Expense_Name.Text = string.Empty;
 
             }
 
@@ -186,7 +187,7 @@ namespace FinanceMobileApp
             // we are creating a new expense here. 
             var expense = (Expense)BindingContext;
             expense.Date = SelectedDate;
-            expense.Name = Name.Text;
+            expense.Name = Expense_Name.Text;
             expense.Description = ExpenseDescription;
             expense.Spending = ExpenseAmount;
             expense.Category = SelectedItem.ImageUrl;
@@ -195,7 +196,7 @@ namespace FinanceMobileApp
             {
                 expense.FileName = Path.Combine(Environment.GetFolderPath(
                                   Environment.SpecialFolder.LocalApplicationData),
-                                  $"{Path.GetRandomFileName()} .expenses.txt");
+                                  $"{Path.GetRandomFileName()}.{expense.Name}.MyExpenses.txt");
                 
             }
             var expenseJson = JsonConvert.SerializeObject(expense);

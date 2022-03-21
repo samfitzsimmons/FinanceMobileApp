@@ -25,7 +25,7 @@
                     Format="D"
                     DateSelected="ExpenseDate_DateSelected" 
                     HeightRequest="40"/>
-            <Entry x:Name="Name"  Placeholder="Expense Name"
+            <Entry x:Name="Expense_Name"  Placeholder="Expense Name"
                    HeightRequest="40"/>
             <Entry x:Name="Expense_Amount"  Placeholder="Expense Amount"
                     HeightRequest="40"/>
