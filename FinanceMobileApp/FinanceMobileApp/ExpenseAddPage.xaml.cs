@@ -17,7 +17,7 @@ namespace FinanceMobileApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ExpenseAddPage : ContentPage
     {
-        private DateTime SelectedDate; //The selected date by the user
+        private DateTime SelectedDate = DateTime.Now; //The selected date by the user
         private string Selected_Category;// The selected Category from the list 
         private decimal ExpenseAmount;
         private string ExpenseDescription;
@@ -142,14 +142,16 @@ namespace FinanceMobileApp
 
         private Category getCategory(Expense deserializedExpense) 
         {
-            int indexOfCategory = 0;
-            Categories.ForEach(category => {
-                if (category.ImageUrl == deserializedExpense.Category)
+            Category match = new Category();
+            for (int i = 0; i < Categories.Count -1; i++) 
+            {
+                if (Categories[i].ImageUrl == deserializedExpense.Category)
                 {
-                    indexOfCategory = Categories.IndexOf(category);
+                    match.CategoryName = Categories[i].CategoryName;
+                    match.ImageUrl = Categories[i].ImageUrl;
                 }
-            });
-            return Categories[indexOfCategory];
+            }
+            return match;
         }
 
         private void ExpenseDate_DateSelected(object sender, DateChangedEventArgs e)

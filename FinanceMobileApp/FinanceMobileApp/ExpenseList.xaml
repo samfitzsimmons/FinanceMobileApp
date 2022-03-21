@@ -12,7 +12,7 @@
         <ToolbarItem x:Name="Expenses_ExpenseList" 
                      Text="Expenses" 
                      Order="Primary"
-                     Clicked="Expenses_ExpenseAddPage_Clicked"/>
+                     Clicked="Expenses_ExpenseList_Clicked"/>
         <ToolbarItem x:Name="LogoToolBar_ExpenseList" 
                      IconImageSource="Assets/money.png" 
                      Order="Primary"
@@ -24,10 +24,17 @@
             <Button Text="Add Expense" Clicked="OnExpenseAddedClick" />
             <ListView x:Name="ExpenseListView"
                   Margin="20"
-                  ItemSelected="ExpenseListView">
+                  ItemSelected="ExpenseListView_ItemSelected">
                 <ListView.ItemTemplate>
+                    
                     <DataTemplate x:DataType="model:Expense">
-                        <TextCell Text="{Binding Name}" Detail="{Binding Date}" />
+                        <ViewCell>
+                            <Grid>
+                                <Label Text="{Binding Date}"/>
+                                <Label Grid.Column="1" Text="{Binding Spending}"/>
+                                <Label Grid.Column="2" Text="{Binding Name}"/>
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

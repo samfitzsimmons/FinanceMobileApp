@@ -52,6 +52,15 @@ namespace FinanceMobileApp
 
         }
 
+        private async void Expenses_ExpenseAddPage_Clicked(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new ExpenseAddPage
+            {
+                BindingContext = (Expense)e.SelectedItem
+            }));
+        }
+
+
         private void Budgets_ExpenseList_Clicked(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new NavigationPage(new MainPage()));//*Change to all budgets
