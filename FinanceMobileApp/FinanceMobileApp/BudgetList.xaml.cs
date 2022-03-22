@@ -19,7 +19,7 @@ namespace FinanceMobileApp
             InitializeComponent();
         }
 
-        private void AddBudgetButton_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
             var budgets = new List<Budget>();
             var files = Directory.EnumerateFiles(Environment.GetFolderPath(
@@ -38,6 +38,11 @@ namespace FinanceMobileApp
                 budgets.Add(budget);
             }
             BudgetListView.ItemsSource = budgets.OrderByDescending(n => n.BudgetMonth);
+        }
+
+        private async void AddBudgetButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new BudgetAddPage())); 
         }
 
         private async void BudgetListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

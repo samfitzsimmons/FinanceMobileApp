@@ -21,7 +21,17 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Add Expense" Clicked="OnExpenseAddedClick" />
+            <Button Text="Add Expense" 
+                    TextColor="DarkBlue"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    BackgroundColor="OrangeRed"
+                    BorderColor="OrangeRed"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    Margin="5"
+                    Clicked="OnExpenseAddedClick" />
             <ListView x:Name="ExpenseListView"
                   Margin="20"
                   ItemSelected="ExpenseListView_ItemSelected">

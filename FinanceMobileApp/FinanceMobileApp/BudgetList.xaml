@@ -20,7 +20,19 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Button x:Name="AddBudgetButton" Text="Add Budget" Clicked="AddBudgetButton_Clicked" />
+            <Button x:Name="AddBudgetButton" 
+                    Text="Add Budget" 
+                    TextColor="DarkBlue"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    BackgroundColor="DeepSkyBlue"
+                    BorderColor="DeepSkyBlue"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    Margin="5"
+                    Clicked="AddBudgetButton_Clicked" />
+            
             <ListView x:Name="BudgetListView"
                   Margin="20"
                   ItemSelected="BudgetListView_ItemSelected">

@@ -89,7 +89,7 @@ namespace FinanceMobileApp
                 File.Delete(budget.BudgetFileName);// Deletes budget amount filename
 
                 // Deletes goal description
-                if (budget.GoalDescription.Length > 0)
+                if (!string.IsNullOrEmpty(budget.GoalDescription))
                 {
                     var goalfile = Directory.EnumerateFiles(Environment.GetFolderPath(
                         Environment.SpecialFolder.LocalApplicationData),
