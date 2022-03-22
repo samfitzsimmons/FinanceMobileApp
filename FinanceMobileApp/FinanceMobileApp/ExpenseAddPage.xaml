@@ -20,24 +20,56 @@
 
     <ContentPage.Content xmlns:local="clr-namespace:FinanceMobileApp.Models">
         <StackLayout>
-            <Label Text="Enter your expense details:" />
+            <Label Text="Enter your expense details:"
+                   Margin="5"
+                   TextColor="DodgerBlue"
+                   FontAttributes="Bold"
+                   />
             <DatePicker x:Name="ExpenseDate"
-                    Format="D"
-                    DateSelected="ExpenseDate_DateSelected" 
-                    HeightRequest="40"/>
-            <Entry x:Name="Expense_Name"  Placeholder="Expense Name"
+                        Format="D"
+                        Margin="5"
+                        DateSelected="ExpenseDate_DateSelected" 
+                        HeightRequest="40"
+                        TextColor="DodgerBlue"
+                        FontAttributes="Bold"/>
+            <Entry x:Name="Expense_Name"  
+                   Margin="5"
+                   Placeholder="Expense Name"
+                   PlaceholderColor="DodgerBlue"
+                   TextColor="DodgerBlue"
+                   VerticalOptions="EndAndExpand"
+                   FontAttributes="Bold"
                    HeightRequest="40"/>
-            <Entry x:Name="Expense_Amount"  Placeholder="Expense Amount"
-                    HeightRequest="40"/>
-            <Editor x:Name="Description" Placeholder="Expense Description" 
+            <Entry x:Name="Expense_Amount" 
+                   Margin="5"
+                   Placeholder="Expense Amount"
+                   PlaceholderColor="DodgerBlue"
+                   TextColor="DodgerBlue"
+                   VerticalOptions="EndAndExpand"
+                   FontAttributes="Bold"
+                   HeightRequest="40"/>
+            <Editor x:Name="Description" 
+                    Margin="5"
+                    Placeholder="Expense Description" 
+                    PlaceholderColor="DodgerBlue"
+                    TextColor="DodgerBlue"
+                    VerticalOptions="EndAndExpand"
+                    FontAttributes="Bold"
                     HeightRequest="50"  />
-            <Label Text="Choose the expense category " Margin="5"/>
+            <Label Text="Choose the expense category " 
+                   Margin="5"
+                   TextColor="DodgerBlue"
+                   FontAttributes="Bold"/>
 
-            <ListView x:Name="Categories_List" BindingContext="Categories" ItemSelected="Categories_List_ItemSelected" >
+            <ListView x:Name="Categories_List"
+                      HeightRequest="250"
+                      BindingContext="Categories" 
+                      ItemSelected="Categories_List_ItemSelected" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
 
-                        <ImageCell Text="{Binding CategoryName}"  ImageSource="{Binding ImageUrl}" />
+                        <ImageCell Text="{Binding CategoryName}"  
+                                   ImageSource="{Binding ImageUrl}" />
 
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -48,13 +80,31 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button x:Name="Save" Text="Save Expense" 
-                        Clicked="Save_Clicked"
-                        BorderRadius="20"/>
+                <Button x:Name="Save" 
+                        Text="Save Expense" 
+                        Margin="5"
+                        TextColor="DarkBlue"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        HeightRequest="50"
+                        BackgroundColor="DeepSkyBlue"
+                        BorderColor="DeepSkyBlue"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        Clicked="Save_Clicked"/>
 
-                <Button x:Name="Cancel " Text="Cancel"
+                <Button x:Name="Cancel " 
+                        Text="Cancel"
+                        Margin="5"
+                        TextColor="DarkBlue"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        HeightRequest="50"
+                        BackgroundColor="OrangeRed"
+                        BorderColor="OrangeRed"
+                        BorderRadius="10"
+                        BorderWidth="2"
                         Clicked="Cancel_Button_Clicked"
-                        BorderRadius="20"
                         Grid.Column="1"
                         />
             </Grid>

@@ -22,7 +22,7 @@
 
         <StackLayout Margin="15"
                      RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-                     RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=50}">
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}">
 
             <Picker x:Name="ChooseBudgetMonth"
                     Margin="5"
