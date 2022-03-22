@@ -47,5 +47,20 @@ namespace FinanceMobileApp
                 BindingContext = (Budget)e.SelectedItem
             }));
         }
+
+        private void Budgets_BudgetList_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new BudgetList()));
+        }
+
+        private void Expenses_BudgetList_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new ExpenseList()));
+        }
+
+        private void LogoToolBar_BudgetList_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new MainPage()));
+        }
     }
 }
