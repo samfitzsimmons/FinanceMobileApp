@@ -211,7 +211,7 @@ namespace FinanceMobileApp
 
         private void Budgets_ExpenseAddPage_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new MainPage()));//Change to all budgets page
+            Navigation.PushModalAsync(new NavigationPage(new BudgetList()));
         }
 
         private void Expenses_ExpenseAddPage_Clicked(object sender, EventArgs e)

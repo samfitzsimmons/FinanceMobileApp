@@ -2,9 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:model="clr-namespace:FinanceMobileApp.Models"
              x:Class="FinanceMobileApp.BudgetList">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Budgets_BudgetList" 
+                     Text="Budgets" 
+                     Order="Primary"
+                     Clicked="Budgets_BudgetList_Clicked"/>
+        <ToolbarItem x:Name="Expenses_BudgetList" 
+                     Text="Expenses" 
+                     Order="Primary"
+                     Clicked="Expenses_BudgetList_Clicked"/>
+        <ToolbarItem x:Name="LogoToolBar_BudgetList" 
+                     IconImageSource="Assets/money.png" 
+                     Order="Primary"
+                     Clicked="LogoToolBar_BudgetList_Clicked"/>
+        
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Button x:Name="AddBudgetButton" Text="Add Budget" Clicked="AddBudgetButton_Clicked" />
+            <Button x:Name="AddBudgetButton" 
+                    Text="Add Budget" 
+                    TextColor="DarkBlue"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    BackgroundColor="DeepSkyBlue"
+                    BorderColor="DeepSkyBlue"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    Margin="5"
+                    Clicked="AddBudgetButton_Clicked" />
+            
             <ListView x:Name="BudgetListView"
                   Margin="20"
                   ItemSelected="BudgetListView_ItemSelected">

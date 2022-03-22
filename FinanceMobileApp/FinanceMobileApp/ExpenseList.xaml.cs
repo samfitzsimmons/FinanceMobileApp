@@ -63,7 +63,7 @@ namespace FinanceMobileApp
 
         private void Budgets_ExpenseList_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new MainPage()));//*Change to all budgets
+            Navigation.PushModalAsync(new NavigationPage(new BudgetList()));
         }
 
         private void Expenses_ExpenseList_Clicked(object sender, EventArgs e)

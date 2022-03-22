@@ -89,7 +89,7 @@ namespace FinanceMobileApp
                 File.Delete(budget.BudgetFileName);// Deletes budget amount filename
 
                 // Deletes goal description
-                if (budget.GoalDescription.Length > 0)
+                if (!string.IsNullOrEmpty(budget.GoalDescription))
                 {
                     var goalfile = Directory.EnumerateFiles(Environment.GetFolderPath(
                         Environment.SpecialFolder.LocalApplicationData),
@@ -100,12 +100,12 @@ namespace FinanceMobileApp
                 }
             }
 
-            Navigation.PushModalAsync(new NavigationPage(new MainPage())); //*Change to budget list page
+            Navigation.PushModalAsync(new NavigationPage(new BudgetList()));
         }
 
         private void Budgets_BudgetAddPage_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new MainPage()));//*Change to all budgets
+            Navigation.PushModalAsync(new NavigationPage(new BudgetList()));
         }
 
         private void Expenses_BudgetAddPage_Clicked(object sender, EventArgs e)
