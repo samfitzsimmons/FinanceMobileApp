@@ -76,5 +76,38 @@ namespace FinanceMobileApp.Models
                     return Months.Unknown;
             }
         }
+
+        public static string MonthInFilename(string filename)
+        {
+            switch (filename)
+            {
+                case string a when a.Contains("January"):
+                    return "January";
+                case string a when a.Contains("February"):
+                    return "February";
+                case string a when a.Contains("March"):
+                    return "March";
+                case string a when a.Contains("April"):
+                    return "April";
+                case string a when a.Contains("May"):
+                    return "May";
+                case string a when a.Contains("June"):
+                    return "June";
+                case string a when a.Contains("July"):
+                    return "July";
+                case string a when a.Contains("August"):
+                    return "August";
+                case string a when a.Contains("September"):
+                    return "September";
+                case string a when a.Contains("October"):
+                    return "October";
+                case string a when a.Contains("November"):
+                    return "November";
+                case string a when a.Contains("December"):
+                    return "December";
+                default:
+                    return "Unknown";
+            }
+        }
     }
 }

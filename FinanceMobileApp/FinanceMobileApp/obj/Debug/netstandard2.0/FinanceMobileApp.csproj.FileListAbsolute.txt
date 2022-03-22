@@ -127,3 +127,4 @@ C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobil
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp\bin\Debug\netstandard2.0\ref\FinanceMobileApp.dll
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp\bin\Debug\netstandard2.0\FinanceMobileApp.pdb
 C:\Users\crazy\source\repos\FinanceMobileApp_20_03\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\KalAcademy\FinApp\FinanceMobileApp\FinanceMobileApp\obj\Debug\netstandard2.0\BudgetList.xaml.g.cs
