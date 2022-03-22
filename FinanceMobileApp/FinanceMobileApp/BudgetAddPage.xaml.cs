@@ -69,7 +69,7 @@ namespace FinanceMobileApp
 
             }
 
-            Navigation.PushModalAsync(new NavigationPage(new MainPage())); //*Change to BudgetList page
+            Navigation.PushModalAsync(new NavigationPage(new BudgetList())); 
         }
 
 

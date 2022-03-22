@@ -42,7 +42,10 @@ namespace FinanceMobileApp
 
         private async void AddBudgetButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new BudgetAddPage())); 
+            await Navigation.PushModalAsync(new NavigationPage(new BudgetAddPage
+            {
+                BindingContext = new Budget()
+            })); 
         }
 
         private async void BudgetListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
