@@ -34,16 +34,25 @@
                     Clicked="AddBudgetButton_Clicked" />
             
             <ListView x:Name="BudgetListView"
-                  Margin="20"
-                  ItemSelected="BudgetListView_ItemSelected">
+                      Margin="20"
+                      ItemSelected="BudgetListView_ItemSelected">
                 <ListView.ItemTemplate>
 
                     <DataTemplate x:DataType="model:Budget">
                         <ViewCell>
                             <Grid>
-                                <Label Text="{Binding BudgetMonth}"/>
-                                <Label Grid.Column="1" Text="{Binding GoalTitle}"/>
-                                <Label Grid.Column="2" Text="{Binding BudgetAmount}"/>
+                                <Label Grid.Column="0" 
+                                       Text="{Binding BudgetMonth}"
+                                       TextColor="DodgerBlue"
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Column="1" 
+                                       Text="{Binding GoalTitle}"
+                                       TextColor="DodgerBlue"
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Column="2" 
+                                       Text="{Binding BudgetAmount}"
+                                       TextColor="DodgerBlue"
+                                       FontAttributes="Bold"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
